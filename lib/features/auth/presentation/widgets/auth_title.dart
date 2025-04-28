@@ -24,7 +24,7 @@ class AuthTitle extends ConsumerWidget {
               width:
                   containerWidth, //change accordingly to the size of the text below
               decoration: BoxDecoration(
-                color: Color(0xFF58C3b6),
+                color: Colors.lightBlue,
               ),
             ),
             Text(

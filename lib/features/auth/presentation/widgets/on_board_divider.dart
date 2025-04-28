@@ -16,7 +16,7 @@ class OnBoardDivider extends ConsumerWidget {
       children: [
         Expanded(
           child: Divider(
-            color: Color(0xFFCDD1D0),
+            color: Colors.black45,
           ),
         ),
         Padding(
@@ -25,8 +25,8 @@ class OnBoardDivider extends ConsumerWidget {
             " OR ",
             style: TextStyle(
               color: themeMode == ThemeMode.light
-                  ? Color(0xFF797C7B)
-                  : Color(0xFFD6E4E0),
+                  ? Colors.black38
+                  : Colors.white,
               fontSize: 14,
               fontFamily: FontFamily.circular,
               fontWeight: FontWeight.w100,
@@ -35,7 +35,7 @@ class OnBoardDivider extends ConsumerWidget {
         ),
         Expanded(
           child: Divider(
-            color: Color(0xFFCDD1D0),
+            color: Colors.black45,
           ),
         ),
       ],

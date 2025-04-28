@@ -203,7 +203,7 @@ class _SendMediaConfirmationScreenState
                         IconButton(
                           style: ButtonStyle(
                             backgroundColor:
-                                WidgetStatePropertyAll(Color(0xFF20A090)),
+                                WidgetStatePropertyAll(Colors.lightBlue),
                           ),
                           onPressed: isSending
                               ? null

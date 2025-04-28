@@ -124,7 +124,7 @@ class _UserDetailsScreenState extends ConsumerState<UserDetailsScreen> {
                                     .bodySmall!
                                     .copyWith(
                                       fontSize: 12,
-                                      color: Color(0xFFA5E7DE),
+                                      color: Colors.white,
                                     ),
                               ),
                               const SizedBox(height: 20),

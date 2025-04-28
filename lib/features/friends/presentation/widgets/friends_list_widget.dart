@@ -277,7 +277,7 @@ class FriendsListWidget extends ConsumerWidget {
                                     child: FilledButton(
                                       style: FilledButton.styleFrom(
                                         backgroundColor:
-                                            const Color(0xFF3E9D9D),
+                                            Colors.lightBlue,
                                       ),
                                       onPressed: () {
                                         friendsRepository.acceptFriendRequest(
@@ -289,7 +289,7 @@ class FriendsListWidget extends ConsumerWidget {
                                           gravity: ToastGravity.BOTTOM,
                                           timeInSecForIosWeb: 1,
                                           backgroundColor:
-                                              const Color(0xFF3E9D9D),
+                                              Colors.lightBlue,
                                           textColor: Colors.white,
                                           fontSize: 16.0,
                                         );
@@ -320,7 +320,7 @@ class FriendsListWidget extends ConsumerWidget {
                                           gravity: ToastGravity.BOTTOM,
                                           timeInSecForIosWeb: 1,
                                           backgroundColor:
-                                              const Color(0xFF3E9D9D),
+                                              Colors.lightBlue,
                                           textColor: Colors.white,
                                           fontSize: 16.0,
                                         );

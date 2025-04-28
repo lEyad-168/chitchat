@@ -28,34 +28,34 @@ class AuthTextField extends ConsumerWidget {
         controller: controller,
         obscureText: obscureText,
         validator: validator,
-        cursorColor: Color(0xFF5EBAAE),
+        cursorColor: Colors.lightBlue,
         decoration: InputDecoration(
           labelText: labelText,
           labelStyle: TextStyle(
-            color: Color(0xFF5EBAAE),
+            color: Colors.lightBlue,
             fontSize: 14,
           ),
           enabledBorder: UnderlineInputBorder(
             borderSide: BorderSide(
               color: themeMode == ThemeMode.light
                   ? Color(0xFFCDD1D0)
-                  : Color(0xFF595E5C),
+                  : Colors.lightBlue,
             ),
           ),
           focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Color(0xFF5EBAAE)),
+            borderSide: BorderSide(color: Colors.lightBlue),
           ),
           border: UnderlineInputBorder(
             borderSide: BorderSide(
               color: themeMode == ThemeMode.light
                   ? Color(0xFFCDD1D0)
-                  : Color(0xFF595E5C),
+                  : Colors.lightBlue,
             ),
           ),
           errorStyle: TextStyle(
             fontFamily: FontFamily.circular,
             fontSize: 12,
-            color: Color(0xFFFF2D1B),
+            color: Colors.redAccent,
           ),
         ),
         style: Theme.of(context).textTheme.bodyMedium!.copyWith(

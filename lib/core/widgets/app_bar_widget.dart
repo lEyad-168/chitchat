@@ -26,8 +26,8 @@ class AppBarWidget extends ConsumerWidget {
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: isDarkMode(ref, context)
-                        ? Color(0xFF4B9289)
-                        : Color(0xFF363F3B),
+                        ? Colors.lightBlue
+                        : Colors.black,
                     width: 1,
                   ),
                   borderRadius: BorderRadius.circular(50),
@@ -49,8 +49,8 @@ class AppBarWidget extends ConsumerWidget {
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: isDarkMode(ref, context)
-                        ? Color(0xFF4B9289)
-                        : Color(0xFF363F3B),
+                        ? Colors.lightBlue
+                        : Colors.black,
                     width: 1,
                   ),
                   borderRadius: BorderRadius.circular(50),

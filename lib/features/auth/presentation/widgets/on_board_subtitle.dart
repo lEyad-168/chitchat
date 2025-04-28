@@ -10,11 +10,13 @@ class OnBoardSubtitle extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Text(
       "Our chat app is the perfect way to stay connected with friends and family.",
+      textAlign: TextAlign.center,
       style: TextStyle(
-        color: Color(0xFFB9C1BE),
+        color: Colors.black54,
         fontSize: 16,
         fontFamily: FontFamily.circular,
         fontWeight: FontWeight.w100,
+        
       ),
     );
   }

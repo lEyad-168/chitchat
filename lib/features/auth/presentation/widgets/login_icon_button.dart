@@ -12,7 +12,7 @@ class LoginIconButton extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return InkWell(
       borderRadius: BorderRadius.circular(50),
-      splashColor: Color(0xFF24786D).withAlpha(150),
+      splashColor: Colors.lightBlue.withAlpha(150),
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(

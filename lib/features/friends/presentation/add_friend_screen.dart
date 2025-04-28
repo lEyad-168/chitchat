@@ -240,7 +240,7 @@ class _AddFriendScreenState extends ConsumerState<AddFriendScreen> {
                                         style: ButtonStyle(
                                           backgroundColor:
                                               WidgetStateProperty.all(
-                                                  Color(0xFF4B9289)),
+                                                  Colors.lightBlue),
                                         ),
                                       ),
                                     ),

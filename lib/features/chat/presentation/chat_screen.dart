@@ -601,7 +601,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
       ),
       decoration: BoxDecoration(
         color: isMe
-            ? const Color(0xFF20A090)
+            ? Colors.lightBlue
             : themeMode == ThemeMode.light
                 ? Color(0xFFF2F7FB)
                 : Color(0xFF1D2525),
@@ -649,7 +649,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
         ),
         decoration: BoxDecoration(
           color: isMe
-              ? const Color(0xFF20A090)
+              ? Colors.lightBlue
               : themeMode == ThemeMode.light
                   ? Color(0xFFF2F7FB)
                   : Color(0xFF1D2525),

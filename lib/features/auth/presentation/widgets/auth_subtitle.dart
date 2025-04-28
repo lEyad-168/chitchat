@@ -13,9 +13,9 @@ class AuthSubtitle extends ConsumerWidget {
       subtitle,
       textAlign: TextAlign.center,
       style: TextStyle(
-        color: Color(0xFF797C7B),
+        color: Colors.black54,
         fontFamily: FontFamily.circular,
-        fontSize: 14,
+        fontSize: 16,
       ),
     );
   }

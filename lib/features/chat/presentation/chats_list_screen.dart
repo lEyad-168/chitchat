@@ -84,7 +84,7 @@ class _ChatScreenState extends ConsumerState<ChatsListScreen> {
           ],
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: const Color(0xFF24786D),
+          backgroundColor: Colors.lightBlue,
           onPressed: () {
             context.push('/create-group');
           },

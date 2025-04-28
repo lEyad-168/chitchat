@@ -102,7 +102,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                         }
                       },
                       text: "Sign In",
-                      buttonColor: Color(0xFF24786D),
+                      buttonColor: Colors.lightBlue,
                       textColor: Colors.white,
                     ),
                   ),

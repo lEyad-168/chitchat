@@ -74,7 +74,8 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
                             return "Invalid email format.";
                           }
                           return null;
-                        }),
+                        }
+                    ),
                     const SizedBox(height: 30),
                     AuthTextField(
                       controller: passwordController,
@@ -135,7 +136,7 @@ class _SignupScreenState extends ConsumerState<SignupScreen> {
                       }
                     },
                     text: "Sign up",
-                    buttonColor: Color(0xFF24786D),
+                    buttonColor: Colors.lightBlue,
                     textColor: Colors.white,
                   ),
                 ),

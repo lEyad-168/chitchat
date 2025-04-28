@@ -5,7 +5,7 @@ import 'package:chitchat/gen/fonts.gen.dart';
 class AppTheme {
   static ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
-    primaryColor: Color(0xFF24786D),
+    primaryColor: Colors.blue,
     canvasColor: Color(0xFF000E08),
     scaffoldBackgroundColor: Colors.white,
     iconButtonTheme: IconButtonThemeData(
@@ -32,8 +32,8 @@ class AppTheme {
 
   static ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    primaryColor: Color(0xFF24786D),
-    canvasColor: Color(0xFF24786D),
+    primaryColor: Colors.lightBlue,
+    canvasColor: Colors.lightBlueAccent,
     scaffoldBackgroundColor: Color(0xFF121414),
     cardColor: const Color(0xFF1D2525),
     iconButtonTheme: IconButtonThemeData(

@@ -248,7 +248,7 @@ class _CreateGroupScreenState extends ConsumerState<CreateGroupScreen> {
                         friendsListToCreateGroup.clear();
                       },
                 text: "Create",
-                buttonColor: Color(0xFF24786D),
+                buttonColor: Colors.lightBlue,
                 textColor: Colors.white,
               ),
               const SizedBox(height: 30),

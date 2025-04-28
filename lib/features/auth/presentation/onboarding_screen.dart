@@ -21,7 +21,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF1A1A1A),
+      backgroundColor: Colors.white,
       body: SafeArea(
         minimum: EdgeInsets.symmetric(horizontal: 30),
         child: Stack(
@@ -45,9 +45,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
                           const SizedBox(height: 40),
                           AutoSizeText(
                             "Connect friends easily & quickly",
+                            textAlign: TextAlign.center,
                             style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 68,
+                                color: Colors.black,
+                                fontSize: 70,
                                 height: 1.2,
                                 fontFamily: FontFamily.caros),
                             maxLines: 2,

@@ -215,7 +215,7 @@ class _SelectFriendsToCreateGroupScreenState
                               final friend = friends[index];
                               return Material(
                                 color: _isFriendSelected(ref, friend.uid!)
-                                    ? Color.fromARGB(118, 36, 120, 109)
+                                    ? Colors.lightBlue
                                     : Colors.transparent,
                                 child: InkWell(
                                   onTap: () async {
@@ -241,13 +241,13 @@ class _SelectFriendsToCreateGroupScreenState
                                                     decoration: BoxDecoration(
                                                       border: Border.all(
                                                         color:
-                                                            Color(0xFF24786D),
+                                                            Colors.lightBlue,
                                                         width: 1.5,
                                                       ),
                                                       borderRadius:
                                                           BorderRadius.circular(
                                                               50),
-                                                      color: Color(0xFF24786D),
+                                                      color: Colors.lightBlue,
                                                     ),
                                                     child: Icon(
                                                       Icons.done,
@@ -307,7 +307,7 @@ class _SelectFriendsToCreateGroupScreenState
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () => context.pop(),
-          backgroundColor: Color(0xFF24786D),
+          backgroundColor: Colors.lightBlue,
           child: const Icon(
             Icons.arrow_forward_rounded,
             color: Colors.white,
