@@ -103,44 +103,38 @@ class _UserDetailsState extends ConsumerState<UserDetails> {
     );
   }
 
-  Widget _buildUserDetail(String title, String? value,
-      {bool isEditable = false}) {
-    final currentUser = ref.watch(currentUserProvider).value;
+  Widget _buildUserDetail(String title, String? value, {bool isEditable = false}) {
+  final currentUser = ref.watch(currentUserProvider).value;
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 15),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            title,
-            style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                  fontSize: 14,
-                ),
-          ),
-          const SizedBox(height: 10),
-          Row(
-            children: [
-              Text(
+  return Padding(
+    padding: const EdgeInsets.symmetric(vertical: 15),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: Theme.of(context).textTheme.bodySmall!.copyWith(fontSize: 14),
+        ),
+        const SizedBox(height: 10),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start, // Align icon with text start
+          children: [
+            Flexible(
+              child: Text(
                 value ?? "",
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                      fontSize: 18,
-                    ),
+                style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 18),
+                softWrap: true, // Enable text wrapping
               ),
-              const SizedBox(
-                width: 10,
-              ),
-              if (currentUser!.uid == widget.user.uid && isEditable)
-                const Icon(
-                  Icons.edit,
-                  size: 16,
-                )
-            ],
-          )
-        ],
-      ),
-    );
-  }
+            ),
+            const SizedBox(width: 10),
+            if (currentUser!.uid == widget.user.uid && isEditable)
+              const Icon(Icons.edit, size: 16), // Edit icon stays at the start
+          ],
+        ),
+      ],
+    ),
+  );
+}
 
   void _buildBottomModalSheet(String infoToChange, String currentValue) {
     final userRepo = ref.watch(userRepositoryProvider);
