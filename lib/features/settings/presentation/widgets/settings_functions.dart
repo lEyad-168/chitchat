@@ -107,7 +107,7 @@ class _SettingsFunctionsState extends ConsumerState<SettingsFunctions> {
         SettingButton(
           iconPath: Assets.icons.settings.path,
           title: "App",
-          subtitle: "Theme, language",
+          subtitle: "Theme Setting",
           onTap: () {
             context.push('/settings/app-settings');
           },
